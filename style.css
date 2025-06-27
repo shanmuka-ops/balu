@@ -6,7 +6,7 @@
 }
 
 .img1 {
-    width: 790px;
+    width: 100%;
     margin: 5px 5px
 }
 
@@ -20,12 +20,16 @@
     margin-left: 100px;
 }
 
+.img2 {
+    width: 100%;
+}
+
 .sub {
     background-color: red;
     padding-left: 220px;
 }
 
-@media(max-width:932px) {
+@media(max-width:576px) {
 
     .container {
         width: auto;
@@ -33,23 +37,17 @@
         margin: 0px;
     }
 
-    .img1 {
-        width: 100px;
-        margin: 5px 5px;
-    }
-
-    .img2 {
-        width: 100px;
-        margin: 5px 5px;
-    }
-
-    .img3 {
-        width: 100px;
-        margin: 5px 5px;
-    }
-
+    .img3,
     .img4 {
-        width: 100px;
-        margin: 5px 5px;
+        display: flex;
+        object-fit: cover;
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+
+    .sub {
+        background-color: red;
+        padding: 5px 5px;
+        text-align: center;
     }
 }
